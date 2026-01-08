@@ -83,4 +83,20 @@ button:hover {
     transform: translateY(0);
   }
 }
+body {
+    font-family: 'Poppins', sans-serif;
+}
+button {
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
 
+button:hover {
+    background-color: #2980b9; /* Cor muda quando passa o mouse */
+}
