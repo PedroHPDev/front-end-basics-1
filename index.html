@@ -3,36 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Meu primeiro projeto</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <h1>Olá, mundo!</h1>
     <p>Meu primeiro projeto front-end usando VS Code.</p>
     
-    <button>Começar</button>
+    <button id="btn-comecar">Começar</button>
+    <p id="mensagem-boas-vindas"></p>
+
+    <script>
+        const botao = document.getElementById('btn-comecar');
+        const campoMensagem = document.getElementById('mensagem-boas-vindas');
+
+        botao.addEventListener('click', function() {
+            campoMensagem.innerText = "🎉 Bem-vindo ao meu projeto! Fico feliz em ver você por aqui.";
+        });
+    </script>
 </body>
-</html><button id="btn-comecar">Começar</button>
-<p id="mensagem-boas-vindas"></p> ```
-
-### Passo 2: O JavaScript (A mágica)
-Você pode colocar este código logo antes de fechar a tag `</body>`. Ele vai "escutar" o clique do mouse.
-
-```html
-<script>
-    // 1. Selecionamos o botão e o espaço da mensagem
-    const botao = document.getElementById('btn-comecar');
-    const campoMensagem = document.getElementById('mensagem-boas-vindas');
-
-    // 2. Criamos a função que "ouve" o clique
-    botao.addEventListener('click', function() {
-        campoMensagem.innerText = "🎉 Bem-vindo ao meu projeto! Fico feliz em ver você por aqui.";
-        campoMensagem.style.color = "#2ecc71"; // Deixa o texto verdinho
-        campoMensagem.style.fontWeight = "600"; // Deixa em negrito (usando o Poppins que você baixou)
-    });
-</script>
+</html>
