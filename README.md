@@ -1,11 +1,14 @@
-# Front-end Basics
+# Front-End Basics
 
-Repositório dedicado aos meus estudos iniciais em desenvolvimento front-end.
+This is my first front-end project built with HTML and CSS.
 
-## Tecnologias
+## Live Demo
+🔗 https://pedrohpdev.github.io/front-end-basics-1/
+
+## Technologies
 - HTML5
 - CSS3
-- JavaScript
 
-## Objetivo
-Construir uma base sólida em front-end e evoluir com projetos práticos.
+## Author
+PedroHPDev
+
