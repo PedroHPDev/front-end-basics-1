@@ -1,6 +1,9 @@
-const button = document.querySelector("button");
+const cards = document.querySelectorAll(".card");
 
-button.addEventListener("click", () => {
-  alert("Bem-vindo ao meu primeiro projeto Front-end 🚀");
+cards.forEach(card => {
+  card.addEventListener("click", () => {
+    alert(`Você clicou em ${card.querySelector("h3").innerText}`);
+  });
 });
+
 
