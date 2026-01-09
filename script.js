@@ -5,5 +5,10 @@ cards.forEach(card => {
     alert(`Você clicou em ${card.querySelector("h3").innerText}`);
   });
 });
+cards.forEach(card => {
+  card.addEventListener("click", () => {
+    card.classList.toggle("active");
+  });
+});
 
 

@@ -106,3 +106,6 @@ button:active {
     align-items: center;
   }
 }
+.card.active {
+  border: 2px solid #667eea;
+}
