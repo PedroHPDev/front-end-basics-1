@@ -1,60 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu primeiro projeto</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Front-End</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
   <!-- HEADER -->
   <header class="header">
-    <h1>Olá, mundo!</h1>
-    <p>Aprendendo HTML, CSS e JavaScript</p>
+    <h1>Meu Projeto Front-End</h1>
+    <p>HTML • CSS • JavaScript</p>
   </header>
 
-  <!-- BOTÃO INICIAL -->
+  <!-- INTRO -->
   <section class="intro">
-  <h2>Meu primeiro projeto Front-End</h2>
-  <p>Explorando HTML, CSS e JavaScript na prática</p>
-  <button id="btn-comecar">Começar</button>
-  <p id="mensagem-boas-vindas"></p>
-</section>
+    <h2>Bem-vindo 👋</h2>
+    <p>Clique no botão para iniciar sua experiência</p>
+    <button id="btn-comecar">Começar</button>
+    <p id="mensagem-boas-vindas"></p>
+  </section>
 
   <!-- CARDS -->
-  <main class="cards">
+  <section class="cards">
     <div class="card">
       <h3>HTML</h3>
-      <p>Estrutura da web</p>
+      <p>Estrutura das páginas</p>
     </div>
 
     <div class="card">
       <h3>CSS</h3>
-      <p>Estilo e layout</p>
+      <p>Visual moderno e responsivo</p>
     </div>
 
     <div class="card">
       <h3>JavaScript</h3>
-      <p>Interatividade</p>
+      <p>Interatividade e lógica</p>
     </div>
-  </main>
+  </section>
 
   <!-- CONTADOR -->
-  <div class="counter">
+  <section class="counter">
     <button id="count-btn">Clique aqui</button>
     <p>Cliques: <span id="count">0</span></p>
-  </div>
+  </section>
 
-  <!-- MODAL (APENAS UM) -->
+  <!-- MODAL -->
   <div class="modal" id="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
@@ -63,7 +61,7 @@
     </div>
   </div>
 
-  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
+
