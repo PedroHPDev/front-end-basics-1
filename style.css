@@ -6,15 +6,13 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Faz o conteúdo ficar no centro da tela */
-    text-align: center;
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  text-align: center;
+}
+
 }
 
 h1 {
@@ -122,6 +120,7 @@ button:active {
 }
 
 .modal-content {
+  position: relative;
   background: white;
   padding: 30px;
   border-radius: 12px;

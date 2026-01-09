@@ -1,62 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro projeto</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu primeiro projeto</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+  <!-- HEADER -->
+  <header class="header">
     <h1>Olá, mundo!</h1>
-    <p>Meu primeiro projeto front-end usando VS Code.</p>
-    
+    <p>Aprendendo HTML, CSS e JavaScript</p>
+  </header>
+
+  <!-- BOTÃO INICIAL -->
+  <section class="intro">
     <button id="btn-comecar">Começar</button>
     <p id="mensagem-boas-vindas"></p>
-<div class="modal" id="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2 id="modal-title"></h2>
-    <p id="modal-text"></p>
-  </div>
-</div>
+  </section>
 
-    <script>
-        const botao = document.getElementById('btn-comecar');
-        const campoMensagem = document.getElementById('mensagem-boas-vindas');
-
-        botao.addEventListener('click', function() {
-            campoMensagem.innerText = "🎉 Bem-vindo ao meu projeto! Fico feliz em ver você por aqui.";
-        });
-    </script>
-  <header class="header">
-  <p>Aprendendo HTML, CSS e JavaScript</p>
-</header>
+  <!-- CARDS -->
   <main class="cards">
-  <div class="card">
-    <h3>HTML</h3>
-    <p>Estrutura da web</p>
-  </div>
+    <div class="card">
+      <h3>HTML</h3>
+      <p>Estrutura da web</p>
+    </div>
 
-  <div class="card">
-    <h3>CSS</h3>
-    <p>Estilo e layout</p>
-  </div>
+    <div class="card">
+      <h3>CSS</h3>
+      <p>Estilo e layout</p>
+    </div>
 
-  <div class="card">
-    <h3>JavaScript</h3>
-    <p>Interatividade</p>
-  </div>
-</main>
-<div class="counter">
+    <div class="card">
+      <h3>JavaScript</h3>
+      <p>Interatividade</p>
+    </div>
+  </main>
+
+  <!-- CONTADOR -->
+  <div class="counter">
     <button id="count-btn">Clique aqui</button>
     <p>Cliques: <span id="count">0</span></p>
   </div>
 
-  <!-- MODAL -->
+  <!-- MODAL (APENAS UM) -->
   <div class="modal" id="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
@@ -64,7 +60,8 @@
       <p id="modal-text"></p>
     </div>
   </div>
-<section id="dynamic"></section>
 
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
