@@ -1,6 +1,21 @@
 // Elementos principais
 const btnComecar = document.getElementById("btn-comecar");
 const mensagemBoasVindas = document.getElementById("mensagem-boas-vindas");
+// Interação com mensagens
+const mensagens = [
+  "Boa! Você interagiu 🎯",
+  "Curioso, hein? 😄",
+  "JavaScript funcionando corretamente 💪",
+  "Interatividade deixa tudo mais interessante 😉",
+  "Projeto simples, mas bem pensado 👌"
+];
+
+let indiceMensagem = 0;
+
+countBtn.addEventListener("click", () => {
+  countText.textContent = mensagens[indiceMensagem];
+  indiceMensagem = (indiceMensagem + 1) % mensagens.length;
+});
 
 const cards = document.querySelectorAll(".card");
 const modal = document.getElementById("modal");
