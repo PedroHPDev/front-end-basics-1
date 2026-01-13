@@ -1,39 +1,53 @@
-// BOTÃO COMEÇAR
+// Elementos principais
 const btnComecar = document.getElementById("btn-comecar");
-const mensagem = document.getElementById("mensagem-boas-vindas");
+const mensagemBoasVindas = document.getElementById("mensagem-boas-vindas");
 
-btnComecar.addEventListener("click", () => {
-  mensagem.innerText = "🚀 Projeto iniciado com sucesso!";
-});
-
-// MODAL DOS CARDS
 const cards = document.querySelectorAll(".card");
 const modal = document.getElementById("modal");
 const modalTitle = document.getElementById("modal-title");
 const modalText = document.getElementById("modal-text");
 const closeBtn = document.querySelector(".close");
 
-cards.forEach(card => {
-  card.addEventListener("click", () => {
-    modal.style.display = "flex";
-    modalTitle.innerText = card.querySelector("h3").innerText;
-    modalText.innerText = card.querySelector("p").innerText;
-  });
-});
-
-closeBtn.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-
-// CONTADOR
-let count = 0;
 const countBtn = document.getElementById("count-btn");
 const countText = document.getElementById("count");
 
-countBtn.addEventListener("click", () => {
-  count++;
-  countText.innerText = count;
+// Estado
+let totalCliques = 0;
+
+// Funções
+function iniciarProjeto() {
+  mensagemBoasVindas.textContent = "🚀 Projeto iniciado! Explore os cards abaixo.";
+}
+
+function abrirModal(titulo, texto) {
+  modalTitle.textContent = titulo;
+  modalText.textContent = texto;
+  modal.style.display = "flex";
+}
+
+function fecharModal() {
+  modal.style.display = "none";
+}
+
+function incrementarContador() {
+  totalCliques++;
+  countText.textContent = totalCliques;
+}
+
+// Eventos
+btnComecar.addEventListener("click", iniciarProjeto);
+
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    const titulo = card.querySelector("h3").textContent;
+    const texto = card.querySelector("p").textContent;
+    abrirModal(titulo, texto);
+  });
 });
+
+closeBtn.addEventListener("click", fecharModal);
+countBtn.addEventListener("click", incrementarContador);
+
 
 
 
