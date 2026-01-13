@@ -22,10 +22,12 @@ Neste projeto pratiquei:
 - Publicação de projetos no GitHub Pages
 
 ## 📂 Estrutura do projeto
-├── index.html
-├── style.css
-└── assets/
-└── imagens
+front-end-basics-1/
+│── index.html
+│── style.css
+│── script.js
+│── favicon.ico
+
 
 ## 🚀 Próximas melhorias
 - Melhorar o layout com CSS
