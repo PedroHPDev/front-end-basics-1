@@ -1,21 +1,6 @@
-// Elementos principais
+// ================= ELEMENTOS =================
 const btnComecar = document.getElementById("btn-comecar");
 const mensagemBoasVindas = document.getElementById("mensagem-boas-vindas");
-// Interação com mensagens
-const mensagens = [
-  "Boa! Você interagiu 🎯",
-  "Curioso, hein? 😄",
-  "JavaScript funcionando corretamente 💪",
-  "Interatividade deixa tudo mais interessante 😉",
-  "Projeto simples, mas bem pensado 👌"
-];
-
-let indiceMensagem = 0;
-
-countBtn.addEventListener("click", () => {
-  countText.textContent = mensagens[indiceMensagem];
-  indiceMensagem = (indiceMensagem + 1) % mensagens.length;
-});
 
 const cards = document.querySelectorAll(".card");
 const modal = document.getElementById("modal");
@@ -26,12 +11,21 @@ const closeBtn = document.querySelector(".close");
 const countBtn = document.getElementById("count-btn");
 const countText = document.getElementById("count");
 
-// Estado
-let totalCliques = 0;
+// ================= ESTADO =================
+const mensagens = [
+  "Boa! Você interagiu 🎯",
+  "Curioso, hein? 😄",
+  "JavaScript funcionando corretamente 💪",
+  "Interatividade deixa tudo mais interessante 😉",
+  "Projeto simples, mas bem pensado 👌"
+];
 
-// Funções
+let indiceMensagem = 0;
+
+// ================= FUNÇÕES =================
 function iniciarProjeto() {
-  mensagemBoasVindas.textContent = "🚀 Projeto iniciado! Explore os cards abaixo.";
+  mensagemBoasVindas.textContent =
+    "🚀 Projeto iniciado! Explore as interações abaixo.";
 }
 
 function abrirModal(titulo, texto) {
@@ -44,12 +38,12 @@ function fecharModal() {
   modal.style.display = "none";
 }
 
-function incrementarContador() {
-  totalCliques++;
-  countText.textContent = totalCliques;
+function interagir() {
+  countText.textContent = mensagens[indiceMensagem];
+  indiceMensagem = (indiceMensagem + 1) % mensagens.length;
 }
 
-// Eventos
+// ================= EVENTOS =================
 btnComecar.addEventListener("click", iniciarProjeto);
 
 cards.forEach((card) => {
@@ -61,7 +55,7 @@ cards.forEach((card) => {
 });
 
 closeBtn.addEventListener("click", fecharModal);
-countBtn.addEventListener("click", incrementarContador);
+countBtn.addEventListener("click", interagir);
 
 
 
